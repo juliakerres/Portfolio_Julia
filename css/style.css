@@ -1,0 +1,243 @@
+/* This is a comment */
+
+body{
+    background-color: white;
+    font-family:raleway, sans-serif;
+}
+header {
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+/*//////*/
+
+img{
+    display: flexbox;
+    width: 100%;
+    height: auto;
+}
+
+.img-01{
+    max-width: 500px;
+}
+.img-02{
+    align-self: flex-start;
+    max-width: 200px;
+}
+.img-03{
+    max-width: 750px;
+}
+.img-04{
+    max-width: 400px;
+}
+.img-05{
+    max-width: 500px;
+}
+.img-06{
+    padding-bottom: 20px;
+}
+.img-07{
+    padding-bottom: 10px;
+}
+.img-08{
+    max-width: 180px;
+}
+.video-01{
+    max-width: 200px;
+    width: 100%;
+}
+.bild-05{
+    max-width: 100px;
+}
+@media (max-width: 600px) {
+    .bild-05{
+        align-self: flex-end;
+        display: none;
+    }
+}
+.grid-table{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    align-items: flex-end;
+    max-width: 1200px;
+    grid-column-gap: 10px;
+}
+.grid-table-02{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    grid-gap: 10px;
+}
+.video{
+    max-width: 1200px;
+    width: 100%;
+
+}
+span.wrapper{
+    position: relative;
+    display: block;
+    }
+    span.wrapper img{
+        display: block;
+    }
+    span.wrapper video{
+        position: absolute;
+        width: 60%;
+        top: 10%;
+        left: 20%;
+    }
+
+a{
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}   
+a:hover{
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    color: rgb(47, 89, 255);
+    letter-spacing:normal;
+}
+
+/*//////////// */
+
+/* PROJEKTE */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: minmax(100px, auto); */
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+.headline-project{
+    font-family: magneta, serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 33px;
+    font-weight: 300;
+    grid-column: 3/3;
+    padding-top: 20px;
+}
+.headline-project-info{
+    font-family: Raleway, sans-serif; 
+    font-size: 25px;
+    grid-column: 2/6;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+@media(max-width:900px){
+    .container{
+        grid-template-columns: 1fr;
+        padding-right: 20px;
+        align-items: flex-start;
+    }
+}
+@media(max-width:768px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+}
+.description{
+    font-family: magneta, serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 25px;
+    font-size: 25px;
+    justify-content:stretch;
+    align-self: end;
+    grid-column: 2/4;
+    padding-top: 20px;
+}
+.description-supplement{
+    font-family: magneta, serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 25px;
+    font-size: 25px;
+    justify-content:stretch;
+    align-self: end;
+    grid-column: 1/4;
+    padding-left: 20px;
+}
+
+/* HOMEPAGE */
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:flex-start;
+    margin-block-end: 120px;
+    grid-gap: 1em;
+    padding-left: 70px;
+}
+@media(max-width:600px){
+    .container2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 12fr;
+    }
+}
+.italic{
+    font-family: raleway;
+    font-weight: 300;
+    letter-spacing: normal;
+    font-size: 40px;
+}
+.navigation{
+    font-family: magneta, serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 33px;
+}
+.navigation-description{
+    font-family: magneta, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/*//////*/
+
+.schattierter-text{
+    font-family: raleway, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px black;
+    text-align: left;
+    text-decoration: underline overline;
+    padding-top: 33px;
+}
+.contact{
+    font-family: raleway, sans-serif;
+    text-align: left;
+}
+.name{
+    text-align: right;
+}
+
+.about{
+    font-family: magneta, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 25px;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 350px;
+}
+@media(max-width:768px){
+    .about{
+        padding-left: 30px;
+        padding-right:10px;
+    }
+}
